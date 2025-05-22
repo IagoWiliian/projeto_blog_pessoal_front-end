@@ -1,4 +1,4 @@
-import { FacebookLogo, FacebookLogoIcon, InstagramLogo, InstagramLogoIcon, LinkedinLogo, LinkedinLogoIcon } from '@phosphor-icons/react'
+import { GithubLogoIcon, InstagramLogoIcon, LinkedinLogoIcon } from '@phosphor-icons/react'
 
 function Footer() {
 
@@ -6,21 +6,31 @@ function Footer() {
 
     return (
         <>
-            <div className="flex justify-center bg-gray-700 text-white">
-                <div className="container flex flex-col items-center py-4">
+            <div className='flex justify-center text-white bg-black'>
+                <div className='container flex flex-col items-center py-4'>
                     <p className='text-xl font-bold'>
-                            Blog Pessoal Generation | Copyright: {data}
-                        </p>
-                    <p className='text-lg'>Acesse nossas redes sociais</p>
+                        Blog Pessoal Iago Willian | Copyright:{' '}
+                        {data}
+                    </p>
+                    <p className='text-lg'>
+                        Acesse minhas redes sociais
+                    </p>
                     <div className='flex gap-2'>
-                        <LinkedinLogoIcon size={48} weight='bold' />
-                        <InstagramLogoIcon size={48} weight='bold' />
-                        <FacebookLogoIcon size={48} weight='bold' />
+                        <a href="https://linkedin.com/in/iago-willian-" target="_blank">
+                            <LinkedinLogoIcon size={48} weight='bold' />
+                        </a>
+                        <a href="https://www.instagram.com/iagowillian?igsh=MTVrbzEwbDVkNzN1MA==" target="_blank">
+                            <InstagramLogoIcon size={48} weight='bold' />
+                        </a>
+                        <a href="https://github.com/IagoWiliian " target="_blank">
+                            <GithubLogoIcon size={48} weight='bold' />
+                        </a>
                     </div>
                 </div>
             </div>
+
         </>
     )
 }
 
-export default Footer;
+export default Footer
