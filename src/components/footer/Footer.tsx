@@ -6,7 +6,7 @@ function Footer() {
 
     return (
         <>
-            <div className='flex justify-center text-white bg-black'>
+            <div className='flex justify-center text-white bg-indigo-900'>
                 <div className='container flex flex-col items-center py-4'>
                     <p className='text-xl font-bold'>
                         Blog Pessoal Iago Willian | Copyright:{' '}
